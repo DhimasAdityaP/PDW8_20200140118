@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Biodata PDW</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Biodata Website</h1>
+    </header>
+
+    <section id="home">
+        <h2>Home</h2>
+        <div class="section-content">
+            <p>Selamat datang di website saya. Perkenalkan saya Dhimas Aditya Pratama mahasiswa dari Universitas Muhammadiyah Yogyakarta mengambil jurusan Teknologi Informasi dan saya sekarang sudah memasuki semester akhir yaitu semester 7 jelajahi lebih lanjut untuk mengetahui tentang saya.Saya membuat web ini bertujuan untuk mengisi form isi data diri atau biodata dan bisa menampilkan hasil dari inputan tersebut</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="section-content">
+            <p>Saya adalah seorang mahasiswa teknologi informasi yang masih perlu banyak belajar dan perlu banyak mengevaluasi jika masih ada point atau hal yang salah.</p>
+            <p>Selain itu, saya aktif di media sosial. Ikuti perkembangan saya melalui:</p>
+            <p>• <a href="#" style="color: #4CAF50;">Facebook</a></p>
+            <p>• <a href="#" style="color: #4CAF50;">Instagram</a></p>
+        </div>
+    </section>
+
+    <section id="biodata">
+        <h2>Biodata</h2>
+        <div class="section-content">
+            <form id="biodataForm">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="age">Umur:</label>
+                <input type="number" id="age" name="age">
+
+                <label for="address">Alamat:</label>
+                <input type="text" id="address" name="address">
+
+                <label for="education">Pendidikan:</label>
+                <input type="text" id="education" name="education">
+
+                <label>Jenis Kelamin:</label>
+                <input type="radio" id="male" name="gender" value="Laki-laki">
+                <label for="male">Laki-laki</label>
+                <input type="radio" id="female" name="gender" value="Perempuan">
+                <label for="female">Perempuan</label>
+
+                <label>Hobi:</label>
+                <input type="checkbox" id="reading" name="hobby" value="Membaca">
+                <label for="reading">Membaca</label>
+                <input type="checkbox" id="swimming" name="hobby" value="berenang">
+                <label for="berenang">Berenang</label>
+                <input type="checkbox" id="badmintoon" name="hobby" value="bulu tangkis">
+                <label for="bulu tangkis">Bulu Tangkis</label>
+                <input type="checkbox" id="eating" name="hobby" value="Makan">
+                <label for="eating">Makan</label>
+
+                <input type="submit" value="Submit">
+                <button type="button" onclick="handleButtonClick()">Click Me</button>
+            </form>
+        </div>
+        <div id="biodata-result" class="section-content">
+            <h3>Hasil Biodata</h3>
+            <p><strong>Nama:</strong> <span id="result-name"></span></p>
+            <p><strong>Umur:</strong> <span id="result-age"></span></p>
+            <p><strong>Alamat:</strong> <span id="result-address"></span></p>
+            <p><strong>Pendidikan:</strong> <span id="result-education"></span></p>
+            <p><strong>Jenis Kelamin:</strong> <span id="result-gender"></span></p>
+            <p><strong>Hobi:</strong> <span id="result-hobbies"></span></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="nav-buttons">
+            <button onclick="scrollToSection('home')">Home</button>
+            <button onclick="scrollToSection('about')">About</button>
+            <button onclick="scrollToSection('biodata')">Biodata</button>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
